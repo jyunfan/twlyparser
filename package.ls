@@ -11,6 +11,7 @@ scripts:
   prepublish: """
     ./node_modules/.bin/lsc -cj package.ls
   """
+  test: './node_modules/.bin/nodeunit test'
 engines:
   node: '0.8.x'
   npm: '1.1.x'
@@ -22,4 +23,5 @@ devDependencies:
   request: \2.12.x
   q: \0.8.7
   mkdirp: \0.3.x
+  nodeunit: \0.x
 optionalDependencies: {}
